@@ -32,6 +32,12 @@ Clone o repositório:
 git clone https://github.com/matheushabeck/EmpresaJDBC.git
 ```
 
+### 🛠️ Como importar o banco de dados
+
+1. Abra o MySQL Workbench
+2. Vá em `File > Open SQL Script` e selecione `sql/empresa.sql`
+3. Execute o script para criar as tabelas e dados
+
 ---
 
 # 💻 Feito com dedicação por [Matheus Habeck](https://github.com/matheushabeck) 
