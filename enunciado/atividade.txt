@@ -1,0 +1,59 @@
+1. Objetivo
+Desenvolver uma aplicação Java backend orientada a objetos que utilize JDBC para realizar todas as operações de persistência (CRUD) com o banco de dados empresa.
+O sistema deverá ser funcional, atender a 10 regras de negócio obrigatórias com uso de condicionais, e seguir boas práticas de codificação e organização.
+
+2. Contexto da Atividade
+Você é responsável por desenvolver a aplicação de gestão para a base de dados de uma empresa, composta por pessoas, funcionários e projetos.
+A aplicação deverá permitir o cadastro, atualização, consulta e exclusão de registros dessas três entidades, respeitando as regras de negócio listadas abaixo.
+
+3. Regras de Negócio (Obrigatórias - 30% da nota)
+As regras a seguir devem ser implementadas utilizando condições (if, else, switch, etc.):
+
+    1. Ao cadastrar um funcionário, verificar se o ID da pessoa existe na tabela pessoa.
+    2. Um projeto não pode ser criado sem vínculo com um funcionário existente.
+    3. Proibir a exclusão de um funcionário que esteja vinculado a algum projeto.
+    4. Exibir mensagem de erro clara sempre que uma operação falhar por descumprimento das regras.
+    5. Toda operação bem-sucedida deve imprimir uma mensagem de confirmação no console.
+
+4. Requisitos Técnicos e Funcionais
+O sistema deverá:
+
+• Utilizar Java com JDBC (sem frameworks ORM).
+• Criar todas as operações CRUD para:
+
+o Pessoa
+o Funcionário
+o Projeto
+
+• Incluir classes bem definidas com encapsulamento e responsabilidade única.
+• Conectar-se ao banco MySQL com as configurações que criou no banco de dados.
+
+5. Definição Descritiva dos Componentes do Sistema (Classes)
+
+a) Pessoa
+A classe Pessoa representa qualquer indivíduo registrado na empresa.
+É a base para outras entidades mais específicas, como Funcionario. Cada objeto do tipo Pessoa contém as seguintes informações:
+
+• id: identificador único da pessoa (gerado automaticamente).
+• nome: nome completo da pessoa.
+• email: endereço de e-mail válido, necessário para contato.
+
+b) Funcionario
+A classe Funcionario representa os colaboradores da empresa que estão ativamente alocados em algum setor.
+Cada funcionário é também uma pessoa, portanto essa classe pode estender Pessoa (herança).
+
+• id: chave estrangeira que faz referência a uma Pessoa.
+• matricula: código único de identificação do funcionário no formato "F" + três números (ex: F007).
+• departamento: área da empresa à qual o funcionário pertence (TI, RH, Marketing, etc.).
+
+Essa classe é responsável por comportamentos específicos de funcionários, como regras de alocação em projetos, controle de quantidade de projetos ativos
+e validação da matrícula.
+
+c) Projeto
+A classe Projeto representa uma iniciativa interna ou externa desenvolvida pela empresa.
+Cada projeto está vinculado obrigatoriamente a um funcionário responsável.
+
+• id: identificador único do projeto.
+• nome: título do projeto.
+• descricao: descrição detalhada do que o projeto propõe ou executa.
+• id_funcionario: chave estrangeira que vincula o projeto a um funcionário específico.
