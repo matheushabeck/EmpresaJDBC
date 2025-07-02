@@ -1,4 +1,11 @@
-package com.empresa;
+package teste;
+
+import com.empresa.Funcionario;
+import com.empresa.Pessoa;
+import com.empresa.Projeto;
+import dao.FuncionarioDAO;
+import dao.PessoaDAO;
+import dao.ProjetoDAO;
 
 import java.util.List;
 

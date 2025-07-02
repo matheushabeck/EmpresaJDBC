@@ -1,5 +1,9 @@
 package com.empresa;
 
+import dao.FuncionarioDAO;
+import dao.PessoaDAO;
+import dao.ProjetoDAO;
+
 import java.util.List;
 import java.util.Scanner;
 

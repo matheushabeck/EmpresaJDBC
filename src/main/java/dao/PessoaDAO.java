@@ -1,4 +1,7 @@
-package com.empresa;
+package dao;
+
+import com.empresa.Conexao;
+import com.empresa.Pessoa;
 
 import java.sql.*;
 import java.util.ArrayList;

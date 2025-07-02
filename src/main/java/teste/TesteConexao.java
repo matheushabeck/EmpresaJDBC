@@ -1,4 +1,6 @@
-package com.empresa;
+package teste;
+
+import com.empresa.Conexao;
 
 import java.sql.Connection;
 
