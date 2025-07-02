@@ -8,7 +8,7 @@ Sistema básico para **gestão de Pessoas, Funcionários e Projetos**.
 ## 🚀 Funcionalidades
 
 - 👤 Cadastrar, listar, editar e remover **Pessoas**
-- 🧑‍💼 Cadastrar, listar, editar e remover **Funcionários**
+- 💼 Cadastrar, listar, editar e remover **Funcionários**
 - 🗂️ Cadastrar, listar, editar e remover **Projetos**
 - 🔗 Associação entre entidades (como funcionários e projetos)
 
